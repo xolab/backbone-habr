@@ -1,45 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
     <link type="text/css" rel="stylesheet" href="css/style.css"/>
-    <script type="text/javascript" src="js/jquery.js"></script>
-    <script type="text/javascript" src="js/underscore.js"></script>
-    <script type="text/javascript" src="js/backbone.js"></script>
-    <script type="text/javascript" src="js/index.js"></script>
 </head>
 <body>
-<div id="block" class="block">
+<div id="start" class="block">
+    <div class="userplace">
+        <label for="username">Имя пользователя: </label>
+        <input type="text" id="username"/>
+    </div>
+    <div class="buttonplace">
+        <input type="button" value="Проверить"/>
+    </div>
 </div>
 
-<!-- Блок ввода имени пользователя -->
-<script type="text/template" id="start">
-    <div class="start">
-        <div class="userplace">
-            <label for="username">Имя пользователя: </label>
-            <input type="text" id="username"/>
-        </div>
-        <div class="buttonplace">
-            <input type="button" value="Проверить"/>
-        </div>
-    </div>
-</script>
+<div id="error" class="block">
+    Ошибка такой пользователь не найден.
+</div>
 
-<!-- Блок ошибки -->
-<script type="text/template" id="error">
-    <div class="error">
-        Ошибка. Пользователь <%= username %> не найден.
-        <a href="#!/">Go back</a>
-    </div>
-</script>
+<div id="success" class="block">
+    Пользователь найден.
+</div>
 
-<!-- Блок удачи -->
-<script type="text/template" id="success">
-    <div class="success">
-        Пользователь <%= username %> найден.
-        <a href="#!/">Go back</a>
-    </div>
-</script>
+<script src="js/lib/jquery.js"></script>
+<script src="js/lib/underscore.js"></script>
+<script src="js/lib/backbone.js"></script>
 </body>
 </html>
