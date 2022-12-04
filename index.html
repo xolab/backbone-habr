@@ -6,26 +6,45 @@
     <link type="text/css" rel="stylesheet" href="css/style.css"/>
 </head>
 <body>
-<div id="start" class="block">
-    <div class="userplace">
-        <label for="username">Имя пользователя: </label>
-        <input type="text" id="username"/>
+<div id="block" class="block"></div>
+<!-- Блок ввода имени пользователя -->
+<script type="text/template" id="start">
+    <div class="start">
+        <div class="userplace">
+            <label for="username">Имя пользователя: </label>
+            <input type="text" id="username"/>
+        </div>
+        <div class="buttonplace">
+            <input type="button" value="Проверить"/>
+        </div>
     </div>
-    <div class="buttonplace">
-        <input type="button" value="Проверить"/>
+</script>
+
+<!-- Блок ошибки -->
+<script type="text/template" id="error">
+    <div class="error">
+        Ошибка. Пользователь <%= username %> не найден.
+        <a href="#!/">Go back</a>
     </div>
-</div>
+</script>
 
-<div id="error" class="block">
-    Ошибка такой пользователь не найден.
-</div>
-
-<div id="success" class="block">
-    Пользователь найден.
-</div>
+<!-- Блок удачи -->
+<script type="text/template" id="success">
+    <div class="success">
+        Пользователь <%= username %> найден.
+        <a href="#!/">Go back</a>
+    </div>
+</script>
 
 <script src="js/lib/jquery.js"></script>
 <script src="js/lib/underscore.js"></script>
 <script src="js/lib/backbone.js"></script>
+
+<script src="js/models/appState.js"></script>
+<script src="js/models/userNameModel.js"></script>
+<script src="js/collections/family.js"></script>
+<script src="js/routers/router.js"></script>
+<script src="js/views/block.js"></script>
+
 </body>
 </html>

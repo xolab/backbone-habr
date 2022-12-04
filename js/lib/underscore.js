@@ -1316,7 +1316,7 @@
 
   _.extend(_.prototype, {
 
-    // Start chaining a wrapped Underscore object.
+    // Block chaining a wrapped Underscore object.
     chain: function() {
       this._chain = true;
       return this;

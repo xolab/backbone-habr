@@ -2,21 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b0728066-4a80-4754-8199-5cdfb97768ed" name="Changes" comment="Initial project">
-      <change afterPath="$PROJECT_DIR$/js/lib/backbone.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/jquery.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/underscore.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/router/router.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/views/start.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/collections/family.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/models/appState.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/models/userNameModel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/routers/router.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/templates/start.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/backbone.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/lib/index.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/index.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/jquery.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/underscore.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/backbone.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/lib/backbone.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/index.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/jquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/lib/jquery.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/underscore.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/lib/underscore.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/router/router.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/views/start.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/views/block.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,9 +53,17 @@
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/js/lib" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/js/lib" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="bb-habr" type="JavascriptDebugType" engineId="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" uri="http://localhost:63342/backbone-habr/index.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -70,7 +76,7 @@
       <workItem from="1669753198040" duration="327000" />
       <workItem from="1669753555892" duration="1233000" />
       <workItem from="1669922718253" duration="2504000" />
-      <workItem from="1669925346961" duration="718000" />
+      <workItem from="1669925346961" duration="8405000" />
     </task>
     <task id="LOCAL-00001" summary="Initial project">
       <created>1669754650174</created>
@@ -79,7 +85,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669754650174</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Initial project">
+      <created>1669927018594</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1669927018594</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

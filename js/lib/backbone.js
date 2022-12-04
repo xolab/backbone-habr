@@ -7,7 +7,7 @@
 
 (function(root, factory) {
 
-  // Set up Backbone appropriately for the environment. Start with AMD.
+  // Set up Backbone appropriately for the environment. Block with AMD.
   if (typeof define === 'function' && define.amd) {
     define(['underscore', 'jquery', 'exports'], function(_, $, exports) {
       // Export global even in AMD case in case this script is loaded with
@@ -1380,7 +1380,7 @@
       return fragment.replace(routeStripper, '');
     },
 
-    // Start the hash change handling, returning `true` if the current URL matches
+    // Block the hash change handling, returning `true` if the current URL matches
     // an existing route, and `false` otherwise.
     start: function(options) {
       if (History.started) throw new Error("Backbone.history has already been started");
@@ -1586,7 +1586,7 @@
     return child;
   };
 
-  // Set up inheritance for the model, collection, router, view and history.
+  // Set up inheritance for the model, collection, routers, view and history.
   Model.extend = Collection.extend = Router.extend = View.extend = History.extend = extend;
 
   // Throw an error when a URL is needed, and none is supplied.
